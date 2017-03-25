@@ -44,7 +44,7 @@ public class Work {
     	return lib;
     }
 	
-	public static String [] mas(String  mas, String [] ms )
+	public static String [] mas(String  mas, String [] ms ) // добавление в массив
 	{    int n;
 	 	n=ms.length;
 		String [] ms2 = new String[n+1];
