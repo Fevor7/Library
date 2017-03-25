@@ -48,6 +48,7 @@ public class Work {
 	{    int n;
 	 	n=ms.length;
 		String [] ms2 = new String[n+1];
+		for (int i = 0; i<n; i ++) ms2[i]=ms[i];
 		ms2[n]=mas;
 		
 		return ms2;
