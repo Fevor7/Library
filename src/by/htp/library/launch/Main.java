@@ -16,7 +16,7 @@ public class Main {
 		OutInput.prnt(lib);
 		do {
 			switch (OutInput.prntMenu()){
-			case  1: { OutInput.searchAutor(lib); break; } 
+			case  1: { OutInput.searchAutor3(lib); break; } 
 			case  2: { lib=OutInput.addBook(lib); break; } 
 			case  3: { lib=OutInput.delBook(lib); break; } 
 			case  4: { lib=OutInput.sortlBook(lib); break;}

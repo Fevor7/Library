@@ -47,8 +47,8 @@ public class Work {
 	public static String [] mas(String  mas, String [] ms )
 	{    int n;
 	 	n=ms.length;
-		String [] ms2 = new String[n];
-		ms2[n-1]=mas;
+		String [] ms2 = new String[n+1];
+		ms2[n]=mas;
 		
 		return ms2;
 	}
@@ -57,12 +57,13 @@ public class Work {
 	public static int searchAutor3 (String [] autor, PrintedEdition lib[])
 	{
 		int res=-1, n=0;
+		int au = autor.length;
+		int li = lib.length;
 		String ms[] = new String[1];
-		/*for (int g=0; g<lib.length; g++ )
-		for (int h=0; h<lib.length; h++ )*/
-		for (int i=0; i<lib.length; i++ ){
-			
-			if (autor[i].equals(lib[i].getAutor())) { 
+		//for (int h=0; h<lib.length; h++ )
+		for (int i=0; i<lib.length; i++ )
+		for (int j=0; j<autor.length; j++ ){
+			if (autor[j].equals(lib[i].getAutor())) { 
 				res=i; n++; 
 				if (n==1) ms[0]=lib[i].getAutor();
 				else  ms=mas(lib[i].getAutor(),ms); 
